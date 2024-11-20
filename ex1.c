@@ -69,7 +69,7 @@ int main() {
   printf("Please enter the second number (octal):\n");
   scanf("%o", &num2);
   printf("The sum in hexadecimal: %X\n",num1+num2);
-  int bit3=(num1+num2>>3)&0x1, bit5=(num1+num2>>5)&0x1, bit7=(num1+num2>>7)&0x1, bit11=(num1+num2>>11)&0x1;
+  int bit3=num1+num2>>3&0x1, bit5=num1+num2>>5&0x1, bit7=num1+num2>>7&0x1, bit11=num1+num2>>11&0x1;
   printf("The 3,5,7,11 bits are: %d%d%d%d\n", bit3, bit5, bit7, bit11);
   printf("Bye!\n");
   
