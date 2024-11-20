@@ -75,3 +75,4 @@ int main() {
   
   return 0;
 }
+gcc ex1.c -o ex1.out -lm -std=c99 -DNDEBUG
